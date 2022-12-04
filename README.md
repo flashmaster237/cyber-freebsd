@@ -2,20 +2,20 @@
 The desktop environment from CyberOS, on FreeBSD<br><br>
 <h3>Dirty installation:</h3><br>
 <b>Install dependencies:</b>
-```
+```diff
 pkg rquery -e '%n~qt5-*' %n | xargs pkg install -y
 pkg rquery -e '%n~libqt-*' %n | xargs pkg install -y
 pkg rquery -e '%n~kf5-*' %n | xargs pkg install -y
 ```
 <br>
 <b>Install binaries and libraries:</b><br>
-```
+```diff
 Move the binaries to /usr/bin, except "cyber-dock", which should go to /usr/local/bin
 Move the libraries to /usr/local/lib/
 ```
 <br>
 <b>Use Cyber</b><br>
-```
+```diff
 Create your .xinitrc file in your home directory and write "cyber-session" into it.
 ```
 <b>Screenshots:</b>
