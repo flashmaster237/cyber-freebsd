@@ -3,9 +3,7 @@ The desktop environment from CyberOS, on FreeBSD<br><br>
 <h3>Dirty installation:</h3><br>
 <b>Install dependencies:</b>
 ```diff
-pkg rquery -e '%n~qt5-*' %n | xargs pkg install -y
-pkg rquery -e '%n~libqt-*' %n | xargs pkg install -y
-pkg rquery -e '%n~kf5-*' %n | xargs pkg install -y
+pkg rquery -e '%n~qt5-*' %n | xargs pkg install -y && pkg rquery -e '%n~libqt-*' %n | xargs pkg install -y && pkg rquery -e '%n~kf5-*' %n | xargs pkg install -y
 ```
 <br>
 <b>Install binaries and libraries:</b><br>
